@@ -7,6 +7,19 @@
 		body {
 		
 		}
+		a:link {
+			color: grey;
+		}
+		nav {
+			display: flex;
+			flex-direction: row;
+		}
+		#left-nav {
+			justify-content: flex-start;
+		}
+		#right-nav {
+			justify-content: flex-end;	
+		}
 		.main {
 			display: flex;
 			justify-content: center;
@@ -20,6 +33,16 @@
 </head>
 <body>
 	<header>
+		<nav>
+			<div id="left-nav">
+				<a href="#">About</a>
+				<a href="#">Store</a>
+			</div>
+			<div id="righttav">
+				<a href="#">Gmail</a>
+				<a href="#">Images</a>
+			</div>
+		</nav>
 	</header>
 	<div class="main">
 		<img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo">
