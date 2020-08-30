@@ -5,20 +5,23 @@
 	<title>Gerardo's Google Homepage</title>
 	<style>
 		body {
-		
+			display: flex;	
+			flex-direction: column;
 		}
 		a:link {
 			color: grey;
 		}
+		a:visited {
+			color: grey;
+		}
 		nav {
 			display: flex;
-			flex-direction: row;
 		}
 		#left-nav {
-			justify-content: flex-start;
+			margin-right: auto;
 		}
 		#right-nav {
-			justify-content: flex-end;	
+			margin-left: auto;
 		}
 		.main {
 			display: flex;
@@ -27,30 +30,89 @@
 		.searchform {
 			display: flex;
 			justify-content: center;
-			flex: 1 0 10px;
+			flex-direction: column;
+		}
+		footer {
+			display: flex;
 		}
 	</style>
 </head>
+
 <body>
+	<!----TODO NEED TO MAKE A CONTENT FLEX BOX FOR CONTENT-----!>
 	<header>
 		<nav>
 			<div id="left-nav">
 				<a href="#">About</a>
 				<a href="#">Store</a>
 			</div>
-			<div id="righttav">
+			<div id="right-nav">
 				<a href="#">Gmail</a>
 				<a href="#">Images</a>
+				<img src="https://cdn.powermockup.com/wireframe-and-mockup-shapes/android-5-phone/components/grid-list-3x3-preview.jpg" alt="google apps grid" style="height: 1em">
+				<img src="https://www.dovercourt.org/wp-content/uploads/2019/11/610-6104451_image-placeholder-png-user-profile-placeholder-image-png.jpg" alt="profile image placeholder" style="height: 2em">
 			</div>
 		</nav>
 	</header>
 	<div class="main">
 		<img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo">
 	</div>
-	<div class="searchform">
+	<form class="searchform">
 		<input type="text" placeholder="Search...">
-	</div>
+		<div id="search-buttons">
+			<button type="submit">Google Search</button>
+			<button>I'm Feeling Lucky</button>
+		</div>
+	</form>
 	<footer>
+		<div id="left-nav">
+				<a href="#">Advertising</a>
+				<a href="#">Business</a>
+				<a href="#">How Search Works</a>
+		</div>
+		<div id="right-nav">
+				<a href="#">Privacy</a>
+				<a href="#">Terms</a>
+				<a href="#">Settings</a>
+		</div>
 	</footer>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
